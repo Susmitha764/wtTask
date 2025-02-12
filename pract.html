@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                background:linear-gradient(45deg,rgb(252, 137, 252),blue);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                min-height: 100vh;
+            }
+
+            .form {
+                text-align: center;
+                color:black;
+                font-size:24px;
+                font-weight:bold;
+                margin-bottom:20px;
+            }
+
+            .box-container {
+            background:white;
+                margin: 20px;
+                width: 100%;
+                max-width: 700px;
+                padding: 20px;
+                border: 2px solid black;
+                border-radius: 7px;
+            }
+
+            .box {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin-bottom: 16px;
+            }
+
+            .form-obj {
+                flex-grow: 1;
+                flex-shrink:1;
+                flex-basis:300px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form-input, .form-div {
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                background-color: lightgray;
+                width: 100%;
+                height: 40px;
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .button {
+                background-color: rgb(21, 114, 219);
+                color: white;
+                height: 40px;
+                width: 100%;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                text-align: center;
+            }
+
+            .button:hover {
+                background-color: rgb(15, 90, 180);
+            }
+
+            .check {
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .conclude {
+                text-align: center;
+            }
+
+            .footer a {
+                color: rgb(21, 114, 219);
+                text-decoration: none;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <form class="box-container">
+            <h1 class="form">Registration Form</h1>
+            <div class="box">
+                <div class="form-obj">
+                    <label>First Name</label>
+                    <input class="form-input" type="text" placeholder="First Name" />
+                </div>
+                <div class="form-obj">
+                    <label>Last Name</label>
+                    <input class="form-input" type="text" placeholder="Last Name" />
+                </div>
+            </div>
+            <div class="box">
+                <div class="form-obj">
+                    <label>Working Place</label>
+                    <input class="form-input" type="text" placeholder="Working Place" />
+                </div>
+                <div class="form-obj">
+                    <label>State</label>
+                    <select class="form-input">
+                        <option value="">Select State</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Madhya Pradesh</option>
+                        <option>Telangana</option>
+                        <option>Uttar Pradesh</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <div class="form-obj">
+                    <label>Mobile Number</label>
+                    <input class="form-div" type="text" placeholder="Mobile Number" />
+                </div>
+            </div>
+            <div class="box">
+                <div class="form-obj">
+                    <label>Email</label>
+                    <input class="form-div" type="email" placeholder="Email" />
+                </div>
+            </div>
+            <div class="box">
+                <div class="form-obj">
+                    <label>Password</label>
+                    <input class="form-input" type="password" placeholder="Password" />
+                </div>
+                <div class="form-obj">
+                    <label>Confirm Password</label>
+                    <input class="form-input" type="password" placeholder="Confirm Password" />
+                </div>
+            </div>
+            <div class="check">
+                <input type="checkbox" />
+                <label>Show Password</label>
+            </div>
+            <button class="button">Submit</button>
+            <div class="conclude">
+                <p class="footer">
+                    Already a user of this website? <a href="https://www.google.com/">Login</a>
+                </p>
+            </div>
+        </form>
+    </body>
+</html>
